@@ -25,7 +25,16 @@ using namespace std;
 // You do NOT need to write doxygen comments for these. You may add extra helper
 // functions if you want. Work on them one at a time.
 
-// string formatTimeToAMPM(int hours, int minutes)
+string formatTimeToAMPM(int hours, int minutes)
+{
+  if (hours < 0 || hours > 23) {
+    throw logic_error("Bad time");
+  }
+  if (minutes < 0 || minutes > 59) {
+    throw logic_error("Bad time");
+  }
+}
+}
 
 // string reformatTime(const string& time24)
 
