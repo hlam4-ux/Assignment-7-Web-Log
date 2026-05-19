@@ -14,7 +14,9 @@ int main()
   }
 
   string searchname;
-  cout << "Enther username";
+  cin >> searchname;
 
-   return 0;
+  string ip;
+
+  return 0;
 }
