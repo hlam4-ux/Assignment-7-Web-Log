@@ -33,6 +33,11 @@ string formatTimeToAMPM(int hours, int minutes)
   if (minutes < 0 || minutes > 59) {
     throw logic_error("Bad time");
   }
+
+  string ampm = "AM";
+  if (hours >= 12) {
+    ampm = "PM";
+  }
 }
 }
 
