@@ -16,7 +16,7 @@ int main()
   string line;
 
   while (getline(file, line)) {
-    cout << line << endl;
+    cout << "LINE" << line << endl;
   }
 
   file.close();
