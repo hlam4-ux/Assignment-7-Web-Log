@@ -106,11 +106,11 @@ TEST_CASE("reformatTime")
   CHECK(reformatTime("00:00:00") == "12:00 AM");
 }
 
-// TEST_CASE("reformatTime bad times")
-// {
-//   cout << "4: reformatTime exception handling" << endl;
-//   CHECK(reformatTime("11:60:12") == "???"); // minutes invalid
-//   CHECK(reformatTime("11:99:12") == "???"); // minutes invalid
-//   CHECK(reformatTime("25:11:12") == "???"); // hours invalid
-//   CHECK(reformatTime("99:11:12") == "???"); // hours invalid
-// }
+TEST_CASE("reformatTime bad times")
+{
+  cout << "4: reformatTime exception handling" << endl;
+  CHECK(reformatTime("11:60:12") == "???"); // minutes invalid
+  CHECK(reformatTime("11:99:12") == "???"); // minutes invalid
+  CHECK(reformatTime("25:11:12") == "???"); // hours invalid
+  CHECK(reformatTime("99:11:12") == "???"); // hours invalid
+}
