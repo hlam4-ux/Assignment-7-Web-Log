@@ -66,6 +66,9 @@ string reformatTime(const string& time24)
   try {
     int hours;
     int minutes;
+
+    hours = stoi(time24.substr(0, 2));
+    minutes = stoi(time24.substr(3, 2));
   }
 }
 
