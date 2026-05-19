@@ -13,13 +13,8 @@ int main()
     return 1;
   }
 
-  string line;
+  string searchname;
+  cout << "Enther username";
 
-  while (getline(file, line)) {
-    cout << line << endl;
-  }
-
-  file.close();
-
-  return 0;
+   return 0;
 }
