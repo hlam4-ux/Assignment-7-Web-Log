@@ -88,14 +88,14 @@ TEST_CASE("formatTimeToAMPM")
   CHECK(formatTimeToAMPM(0, 0) == "12:00 AM");
 }
 
-// TEST_CASE("formatTimeToAMPM exception")
-// {
-//   cout << "2: formatTimeToAMPM exception handling" << endl;
-//   CHECK_THROWS(formatTimeToAMPM(24, 0));
-//   CHECK_THROWS(formatTimeToAMPM(12, 60));
-//   CHECK_THROWS(formatTimeToAMPM(-1, 0));
-//   CHECK_THROWS(formatTimeToAMPM(0, -1));
-// }
+TEST_CASE("formatTimeToAMPM exception")
+{
+  cout << "2: formatTimeToAMPM exception handling" << endl;
+  CHECK_THROWS(formatTimeToAMPM(24, 0));
+  CHECK_THROWS(formatTimeToAMPM(12, 60));
+  CHECK_THROWS(formatTimeToAMPM(-1, 0));
+  CHECK_THROWS(formatTimeToAMPM(0, -1));
+}
 
 // TEST_CASE("reformatTime")
 // {
