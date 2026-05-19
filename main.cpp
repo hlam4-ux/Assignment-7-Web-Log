@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  ifstream file("./WebLog.txt");
+  ifstream file("WebLog.txt");
   if (!file) {
     cout << "file not found" << endl;
 
@@ -16,7 +16,7 @@ int main()
   string line;
 
   while (getline(file, line)) {
-    cout << "LINE" << line << endl;
+    cout << line << endl;
   }
 
   file.close();
