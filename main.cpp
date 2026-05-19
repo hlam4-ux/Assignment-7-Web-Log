@@ -6,5 +6,9 @@ using namespace std;
 
 int main()
 {
-  cout << "Hello world" << endl;
-}
+  ifstream file("WebLog.txt");
+  if (!file) {
+    cout << "file not found" << endl;
+
+    return 1;
+  }
