@@ -44,7 +44,21 @@ string formatTimeToAMPM(int hours, int minutes)
   if (newhour == 0) {
     newhour = 12;
   }
-}
+
+  string result;
+
+  result = to_string(newhour);
+  result = result + ":";
+
+  if (minutes < 10) {
+    result = result + "0";
+  }
+
+  result = result + to_string(minutes);
+  result = result + " ";
+  result = result + ampm;
+
+  return result;
 }
 
 // string reformatTime(const string& time24)
