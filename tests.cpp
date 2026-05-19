@@ -79,14 +79,14 @@ string reformatTime(const string& time24)
 //-----------------------------------------------------------------------------------
 // Testing code
 
-// TEST_CASE("formatTimeToAMPM")
-// {
-//   cout << "1: formatTimeToAMPM" << endl;
-//   CHECK(formatTimeToAMPM(17, 54) == "5:54 PM");
-//   CHECK(formatTimeToAMPM(12, 30) == "12:30 PM");
-//   CHECK(formatTimeToAMPM(3, 5) == "3:05 AM");
-//   CHECK(formatTimeToAMPM(0, 0) == "12:00 AM");
-// }
+TEST_CASE("formatTimeToAMPM")
+{
+  cout << "1: formatTimeToAMPM" << endl;
+  CHECK(formatTimeToAMPM(17, 54) == "5:54 PM");
+  CHECK(formatTimeToAMPM(12, 30) == "12:30 PM");
+  CHECK(formatTimeToAMPM(3, 5) == "3:05 AM");
+  CHECK(formatTimeToAMPM(0, 0) == "12:00 AM");
+}
 
 // TEST_CASE("formatTimeToAMPM exception")
 // {
