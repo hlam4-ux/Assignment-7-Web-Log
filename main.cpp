@@ -20,4 +20,11 @@ int main()
   string username;
   string time;
   int minutes;
+
+  while (file >> ip >> username >> time >> minutes) {
+    if (username == searchname) {
+      cout << ip << " ";
+      cout << username << " ";
+    }
+  }
 }
