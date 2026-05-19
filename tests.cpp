@@ -38,6 +38,12 @@ string formatTimeToAMPM(int hours, int minutes)
   if (hours >= 12) {
     ampm = "PM";
   }
+
+  int newhour = hours % 12;
+
+  if (newhour == 0) {
+    newhour = 12;
+  }
 }
 }
 
