@@ -12,3 +12,9 @@ int main()
 
     return 1;
   }
+
+  string line;
+
+  while (getline(file, line)) {
+    cout << line << endl;
+  }
