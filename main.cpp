@@ -18,3 +18,8 @@ int main()
   while (getline(file, line)) {
     cout << line << endl;
   }
+
+  file.close();
+
+  return 0;
+}
