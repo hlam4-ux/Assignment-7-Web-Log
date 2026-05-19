@@ -69,6 +69,10 @@ string reformatTime(const string& time24)
 
     hours = stoi(time24.substr(0, 2));
     minutes = stoi(time24.substr(3, 2));
+
+    return formatTimeToAMPM(hours, minutes);
+  } catch (...) {
+    return "???";
   }
 }
 
