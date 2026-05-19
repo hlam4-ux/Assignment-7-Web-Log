@@ -97,14 +97,14 @@ TEST_CASE("formatTimeToAMPM exception")
   CHECK_THROWS(formatTimeToAMPM(0, -1));
 }
 
-// TEST_CASE("reformatTime")
-// {
-//   cout << "3: reformatTime" << endl;
-//   CHECK(reformatTime("17:54:48") == "5:54 PM");
-//   CHECK(reformatTime("12:30:15") == "12:30 PM");
-//   CHECK(reformatTime("03:05:09") == "3:05 AM");
-//   CHECK(reformatTime("00:00:00") == "12:00 AM");
-// }
+TEST_CASE("reformatTime")
+{
+  cout << "3: reformatTime" << endl;
+  CHECK(reformatTime("17:54:48") == "5:54 PM");
+  CHECK(reformatTime("12:30:15") == "12:30 PM");
+  CHECK(reformatTime("03:05:09") == "3:05 AM");
+  CHECK(reformatTime("00:00:00") == "12:00 AM");
+}
 
 // TEST_CASE("reformatTime bad times")
 // {
