@@ -17,6 +17,7 @@ int main()
   cin >> searchname;
 
   string ip;
-
-  return 0;
+  string username;
+  string time;
+  int minutes;
 }
