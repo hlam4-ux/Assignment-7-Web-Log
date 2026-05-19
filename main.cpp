@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-  ifstream file("WebLog.txt");
+  ifstream file("./WebLog.txt");
   if (!file) {
     cout << "file not found" << endl;
 
