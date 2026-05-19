@@ -61,7 +61,13 @@ string formatTimeToAMPM(int hours, int minutes)
   return result;
 }
 
-// string reformatTime(const string& time24)
+string reformatTime(const string& time24)
+{
+  try {
+    int hours;
+    int minutes;
+  }
+}
 
 //-----------------------------------------------------------------------------------
 // Testing code
