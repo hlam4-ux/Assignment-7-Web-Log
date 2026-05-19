@@ -33,3 +33,8 @@ int main()
       total = total + minutes;
     }
   }
+
+  cout << "total minutes " << total << endl;
+  file.close();
+  return 0;
+}
