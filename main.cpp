@@ -14,17 +14,22 @@ int main()
   }
 
   string searchname;
+  cout << "Enter username" << endl;
   cin >> searchname;
 
   string ip;
   string username;
   string time;
   int minutes;
+  int total = 0;
 
   while (file >> ip >> username >> time >> minutes) {
     if (username == searchname) {
       cout << ip << " ";
       cout << username << " ";
+      cout << time << " ";
+      cout << minutes << endl;
+
+      total = total + minutes;
     }
   }
-}
